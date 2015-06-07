@@ -16,7 +16,7 @@
 h1 {
   font-size: 40px;
   color: #F5A623;
-  line-height: 48px;
+  line-height: 50px;
   display: inline;
 }
 
@@ -82,7 +82,7 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #F3F3F3;
+  color: #FF00FF;
   line-height: 28px;
 }
 
@@ -96,6 +96,7 @@ a {
 }
 
 .orange-text {
+  font-weight: bolder;
   color: #F5AE23;
 }
 
@@ -117,6 +118,9 @@ a {
 /* TODO: Replace with image later */
 #header {
   background-color: #484848;
+  background: url(../images/rsz_nlights.png);
+  background-position: left center;
+  background-size: cover;
 }
 
 .flex-box {
@@ -163,6 +167,9 @@ img {
 }
 
 span {
+  color: #800290;
+  font-weight: bolder;
+  font-size: 23px;
   padding: 5px;
 }
 
