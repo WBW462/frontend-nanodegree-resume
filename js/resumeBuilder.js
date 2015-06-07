@@ -2,10 +2,11 @@
 var bio = {
 	"name" : "Bill Whitlow",
 	"role" : "Web Developer",
+//Contact infomation here:
 	"contacts" : {
 		"mobile" : "407-748-2934",
 		"email" : "nwhitlow@bellsouth.net",
-		"linkedin" : "https://www.linkedin.com",//pub/nesbitt-bill-whitlow-jr/10/82/777",
+		"linkedin" : "https://www.linkedin.com",
 		"github" : "WBW462",
 		"twitter" : "@WBW462",
 		"location" : "Orlando, Florida"
@@ -20,6 +21,7 @@ $("#header").prepend(formattedRole);
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 $("#header").prepend(formattedName);
 
+//Top and bottom contact infomation shown here:
 var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 $("#topContacts, #footerContacts").append(formattedMobile);
 var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
@@ -36,8 +38,9 @@ $("#topContacts, #footerContacts").append(formattedLocation);
 var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 $("#header").append(formattedWelcomeMessage);
 var formattedBiopic = HTMLbioPic.replace("%data%", bio.biopic);
-$('#header').append(formattedBiopic);
+$("#header").append(formattedBiopic);
 
+//Breaking out skills here:
 	    if(bio.skills.length > 0) {
 	        $("#header").append(HTMLskillsStart);
 	        var formattedSkills = HTMLskills.replace("%data%", bio.skills[0]);
@@ -71,7 +74,7 @@ var work = {
 		"title": "Services Technician",
 		"location": "Sanford, Florida, United States",
 		"dates": "1998-2000",
-		"description": "Face to Face with pain in the ass folks."
+		"description": "Provided face to face services to the public."
 		},
 
 		{
@@ -79,7 +82,7 @@ var work = {
 		"title": "Production Scheduling/Inventory Manager",
 		"location": "Plant City, Florida, United States",
 		"dates": "1997-1998",
-		"description": "The president."
+		"description": "Manufactured quality food products."
 		},
 
 		{
@@ -87,7 +90,7 @@ var work = {
 		"title": "Microsoft Network Help Desk Technician",
 		"location": "Pinellas Park, Florida, United States",
 		"dates": "1996-1997",
-		"description": "WTF?"
+		"description": "Helped folks with billing issues and accessing the web."
 		},
 
 		{
@@ -95,7 +98,7 @@ var work = {
 		"title": "Sales Manager/Moving Consultant",
 		"location": "Anchorage, Alaska, United States",
 		"dates": "1995-1996",
-		"description": "Chuck."
+		"description": "Provided moving solutions to military and commercial interests."
 		},
 
 		{
@@ -103,7 +106,7 @@ var work = {
 		"title": "Quality Assurance Weapons Standardization Section Noncommissioned Officer in Charge/Manager",
 		"location": "Elmendorf Air Force Base, Alaska, United States",
 		"dates": "1986-1995",
-		"description": "Weapons."
+		"description": "Ensured fighter aircrafts weapons and systems worked when required and not earlier."
 		},
 
 		{
@@ -111,7 +114,7 @@ var work = {
 		"title": "Aircraft Weapons Loading Team Chief ",
 		"location": "Naval Air Station Keflavik, Iceland",
 		"dates": "1985-1986",
-		"description": "Weapons."
+		"description": "Kept an eye on the Soviets under the northern lights."
 		}
 	],
 }
@@ -119,10 +122,12 @@ work.display = function() {
 for (job in work.jobs) {
 		$("#workExperience").append(HTMLworkStart);
 		
+//Combined employer and job title information on same line:
 		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 		var formattedEmployerPlusTitle = formattedEmployer + formattedTitle;
 		$(".work-entry:last").append(formattedEmployerPlusTitle);
+
 		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
 		$(".work-entry:last").append(formattedLocation);
 		var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
@@ -141,14 +146,14 @@ projects.display = function() {
 			"title": "Project 1, Portfolio",
 			"dates": 2015,
 			"description": "Responsive website, built to display images, descriptions and links to each of the portfolio projects throughout the Front-End Web Developer Nanodegree course.",
-			"images": ["images/rsz_1pictures_057_2.png", "images/rsz_budweiser_creatures_005.png"]
+			"images": ["images/rsz_1pictures_057_2.png" /*picture of rollercoaster*/, "images/rsz_budweiser_creatures_005.png" /*picture of budweiser creatures*/]
 			},
-			
+
 			{
 			"title": "Project 2, Online Resume",
 			"dates": 2015,
 			"description": "Clean code written to apply knowledge of variables, objects, JSON, functions and control flow to successfully solve challenges.",
-			"images": ["images/rsz_1img_1961.png", "images/rsz_capture.png"]
+			"images": ["images/rsz_1img_1961.png" /*picture of avocados*/, "images/rsz_capture.png" /*picture of website*/]
 			}
 		],
 	}
@@ -214,6 +219,7 @@ education.display = function(){
 	for (school in education.schools) {
 		$("#education").append(HTMLschoolStart);
 		
+//Combined school names and degree on same line:		
 		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
 		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
 		var formattedNamePlusDegree = formattedName + formattedDegree;
@@ -233,6 +239,7 @@ education.display = function(){
 	for (course in education.onlineCourses) {		
 	$("#education").append(HTMLschoolStart);	
 
+//Combined online school and title on same line:
 		var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
 		var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
 		var formattedOnlineTitlePluseSchool = formattedOnlineTitle + formattedOnlineSchool;
@@ -246,6 +253,7 @@ education.display = function(){
 };
 education.display();
 
+//Activate the Internationalize button
 function inName(name) {
 	name = $("#name").text();
 	name = name.trim().split(" ");
@@ -256,6 +264,7 @@ function inName(name) {
 	return name[0] +" "+name[1];
 
 }
+
 $("#main").prepend(internationalizeButton);
 
 // Insert GOOGLE MAP

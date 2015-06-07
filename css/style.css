@@ -115,9 +115,9 @@ a {
   background-color: #4A4A4A;
 }
 
-/* TODO: Replace with image later */
 #header {
   background-color: #484848;
+/*picture of northern lights in Iceland*/
   background: url(../images/rsz_nlights.png);
   background-position: left center;
   background-size: cover;
