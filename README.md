@@ -16,7 +16,7 @@ And your repository will include the following files:
 * **js/resumeBuilder.js**: This file is empty. You should write your code here.
 * **js/jQuery.js**: The jQuery library.
 * **css/style.css**: Contains all of the CSS needed to style the page.
-* **README.md**: 
+* **README.md**:
 The GitHub readme file.
 * and some images in the images directory.
 
@@ -32,22 +32,22 @@ The resume has four distinct sections: work, education, projects and a header wi
 1. Build four JSONs, each one representing a different resume section. The objects that you create need to follow the names within the schema below exactly. Make sure your JSONs are formatted correctly using <a href="http://jsonlint.com/" target="_blank">JSONlint.com</a>.
 
 * `bio` contains:
-        
+
             name : string
             role : string
             contacts : an object with
                   mobile: string
-                  email: string 
+                  email: string
                   github: string
-                  twitter: string 
+                  twitter: string
                   location: string
-            welcomeMessage: string 
+            welcomeMessage: string
             skills: array of strings
             biopic: url
             display: function taking no parameters
 
 * `education` contains:
-      
+
             schools: array of objects with
                  name: string
                  location: string
@@ -63,19 +63,19 @@ The resume has four distinct sections: work, education, projects and a header wi
             display: function taking no parameters
 
 * `work` contains
-          
+
             jobs: array of objects with
-                 employer: string 
-                 title: string 
-                 location: string 
+                 employer: string
+                 title: string
+                 location: string
                  dates: string (works with a hyphen between them)
-                 description: string 
+                 description: string
             display: function taking no parameters
 
 * `projects` contains:
 
             projects: array of objects with
-                  title: string 
+                  title: string
                   dates: string (works with a hyphen between them)
                   description: string
                   images: array with string urls
@@ -93,3 +93,5 @@ The resume has four distinct sections: work, education, projects and a header wi
 4. All of your code for adding elements to the resume should be within functions. And all of your functions should be encapsulated within the same objects containing your resume data. For instance, your functions for appending work experience elements to the page should be found within the same object containing data about your work experience.
 5. Your resume should also `console.log()` information about click locations. On line 90 in helper.js, you’ll find a jQuery onclick handler that you’ll need to modify to work with the `logClicks(x,y)` function above it.
 6. It’s possible to make additional information show up when you click on the pins in the map. Check out line 174 in helper.js and the Google Maps API to get started.
+
+https://www.flickr.com/photos/ricardo_mangual/8435901617/in/photolist-dRscDB-H9Bje3-pESS4x-k7bPu4-oVrVYt-pXdmoT-cnfXcm-dPnMdn-ovDExy-dYGrsX-xjKyfx-kZ8Fpi-pAggkB-E6F8ci-CUoASM-gz1YqG-i35Wti-7B281P-hpCidc-niWQh5-oqYeJC-irfkdv-pYDj1R-mejtHr-oAgi1Z-kKo9Vz-npW2K2-i8DXwe-DD3JpN-r9EHE7-fEW116-dPYEQq-ryf1S5-rpB2V8-4AcvyD-sdr7WF-qmGDYQ-4e5z65-vCUxxG-qdecLS-E2My2K-eWepZU-ni4ypy-hPAq4Z-Ham9nF-dKt3CT-np61ZW-afZkyL-feDsn2-JuhnEi (Courtesy of Ricardo's Photography, Some rights reserved)

@@ -15,7 +15,8 @@
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: #cc0000;
+  text-shadow: 3px 3px #000000;
   line-height: 50px;
   display: inline;
 }
@@ -82,7 +83,7 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #FF00FF;
+  color: #cc0000;
   line-height: 28px;
 }
 
@@ -118,7 +119,7 @@ a {
 #header {
   background-color: #484848;
 /*picture of northern lights in Iceland*/
-  background: url(../images/rsz_nlights.png);
+  background: url(../images/8435901617_440b2409ee_b.jpg);
   background-position: left center;
   background-size: cover;
 }
