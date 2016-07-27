@@ -83,7 +83,8 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #cc0000;
+  color: white;
+  text-shadow: 3px 3px green;
   line-height: 28px;
 }
 
@@ -168,8 +169,9 @@ img {
 }
 
 span {
-  color: #800290;
-  font-weight: bolder;
+  color: white;
+  text-shadow: 2px 2px red;
+  font-weight: 500;;
   font-size: 23px;
   padding: 5px;
 }
